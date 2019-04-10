@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javabookstudy.iml" filepath="$PROJECT_DIR$/javabookstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/实战java高并发程序设计/实战java高并发程序设计.iml" filepath="$PROJECT_DIR$/实战java高并发程序设计/实战java高并发程序设计.iml" />
+      <module fileurl="file://$PROJECT_DIR$/疯狂Java系列/疯狂Java系列.iml" filepath="$PROJECT_DIR$/疯狂Java系列/疯狂Java系列.iml" />
+    </modules>
+  </component>
+</project>
