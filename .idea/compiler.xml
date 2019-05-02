@@ -6,14 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="interview_question" />
+        <module name="Java并发编程的艺术" />
+        <module name="剑指Offer" />
         <module name="实战java高并发程序设计" />
         <module name="疯狂Java系列" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="javabookstudy" target="1.8" />
-      <module name="实战java高并发程序设计" target="1.8" />
-      <module name="疯狂Java系列" target="1.8" />
+      <module name="interview_question" target="1.5" />
+      <module name="javabookstudy" target="1.5" />
+      <module name="Java并发编程的艺术" target="1.5" />
+      <module name="剑指Offer" target="1.5" />
+      <module name="实战java高并发程序设计" target="1.5" />
+      <module name="疯狂Java系列" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

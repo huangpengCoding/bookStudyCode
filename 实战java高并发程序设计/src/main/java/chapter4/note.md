@@ -64,5 +64,65 @@ public void syncMethod2(){
     这是一个线程的局部变量。也就是说，只有当前线程可以访问。
   注意：为每一个线程分配不同的对象,需要在应用层面保证.ThreadLocal只起到了简单的容器作用.
 
-## 无锁
-    无锁的策略使用的
+## 4.4 无锁
+    无锁的策略使用的叫做比较交换（CAS, Compare And Swap)的技术来鉴别线程冲突一但检测到冲突产生，就重试当前操作直到没有冲突为止
+  CAS(V,E,N) V代表要更新的变量  E代表该变量现在的预期值 N代表要更新的新值  当且仅当V的值等于E时，才将V值改变为N
+  
+## 4.5 死锁
+    通俗地讲，死锁就是两个或多个线程相互占用对方需要的资源，而都不进行释放,导致彼此之间相互等待对方释放资源，产生了无限制等待的现象。
+哲学家进餐问题,产生死锁
+```
+package chapter4;
+public class DeadLock extends Thread {
+
+    protected Object tool;
+    static Object fork1 = new Object();
+    static Object fork2 = new Object();
+
+    public DeadLock(Object obj){
+        this.tool = obj;
+        if(tool  == fork1){
+            this.setName("哲学家A");
+        }
+        if(tool == fork2){
+            this.setName("哲学家B");
+        }
+    }
+
+    @Override
+    public void run() {
+        if(tool==fork1){
+            synchronized (fork1){
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                synchronized (fork2){
+                    System.out.println("哲学家A开始吃饭了");
+                }
+            }
+        }
+        if(tool==fork2){
+            synchronized (fork2){
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                synchronized (fork1){
+                    System.out.println("哲学家B开始吃饭了");
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        DeadLock deadlockA = new DeadLock(fork1);
+        DeadLock deadlockB = new DeadLock(fork2);
+        deadlockA.start();
+        deadlockB.start();
+        Thread.sleep(1000);
+    }
+}
+```
