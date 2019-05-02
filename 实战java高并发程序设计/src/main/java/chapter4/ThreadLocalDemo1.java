@@ -28,7 +28,6 @@ public class ThreadLocalDemo1 {
             this.i = i;
         }
 
-        @Override
         public void run() {
             try {
                 if(tl.get()==null){
