@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java并发编程的艺术/Java并发编程的艺术.iml" filepath="$PROJECT_DIR$/Java并发编程的艺术/Java并发编程的艺术.iml" />
-      <module fileurl="file://$PROJECT_DIR$/interview_question/interview_question.iml" filepath="$PROJECT_DIR$/interview_question/interview_question.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabookstudy.iml" filepath="$PROJECT_DIR$/javabookstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/summary/summary.iml" filepath="$PROJECT_DIR$/summary/summary.iml" />
       <module fileurl="file://$PROJECT_DIR$/剑指Offer/剑指Offer.iml" filepath="$PROJECT_DIR$/剑指Offer/剑指Offer.iml" />
       <module fileurl="file://$PROJECT_DIR$/实战java高并发程序设计/实战java高并发程序设计.iml" filepath="$PROJECT_DIR$/实战java高并发程序设计/实战java高并发程序设计.iml" />
       <module fileurl="file://$PROJECT_DIR$/疯狂Java系列/疯狂Java系列.iml" filepath="$PROJECT_DIR$/疯狂Java系列/疯狂Java系列.iml" />
