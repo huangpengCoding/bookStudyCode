@@ -19,7 +19,7 @@ public class Apple {
     public static void main(String[] args) {
         Apple t1 = new Apple(2.2);
         Apple t2 = new Apple(1.8);
-        ArrayList<Apple> list = new ArrayList<>(4);
+        ArrayList<Apple> list = new ArrayList<Apple>(4);
         list.add(t1);
         list.add(t2);
         System.out.println(list.get(0) == t1);
