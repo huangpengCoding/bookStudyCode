@@ -47,7 +47,7 @@ public class MainFunc {
         //for循环处理
         System.out.println(func1(lis1, lis2));
         //两个指针移动处理
-        List<Integer> res2 = new ArrayList<>();
+        List<Integer> res2 = new ArrayList<Integer>();
         System.out.println(func2(lis1, lis2, res2, 0, 0));
     }
 }
