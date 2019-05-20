@@ -1,4 +1,4 @@
-package algorithm.先递增再递减的数组找出最大值;
+package 算法.先递增再递减的数组找出最大值;
 
 /**
  * @Author: huangpeng3

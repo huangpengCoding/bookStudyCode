@@ -1,4 +1,4 @@
-package algorithm.两个有序list求交集;
+package 算法.两个有序list求交集;
 
 import java.util.ArrayList;
 import java.util.Arrays;
