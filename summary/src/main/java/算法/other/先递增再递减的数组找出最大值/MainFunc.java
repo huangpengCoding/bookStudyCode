@@ -1,4 +1,4 @@
-package 算法.先递增再递减的数组找出最大值;
+package 算法.other.先递增再递减的数组找出最大值;
 
 /**
  * @Author: huangpeng3
@@ -10,7 +10,7 @@ public class MainFunc {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 12, 36, 72, 51, 43, 23, 21};
-        System.out.println(findMaxInArr(arr, 0, arr.length));
+        System.out.println(findMaxInArr(arr, 0, arr.length-1));
     }
 
     public static int findMaxInArr(int[] arr, int l, int r) {

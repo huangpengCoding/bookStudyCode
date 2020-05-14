@@ -1,4 +1,4 @@
-package 算法.单例模式;
+package 算法.other.单例模式;
 
 /**
  * @Author: huangpeng3
@@ -6,12 +6,12 @@ package 算法.单例模式;
  * @Date: 2019/5/19 4:39 PM
  * @Usage:
  */
-public class MainFunc {
+public class  MainFunc {
 
     public static void main(String[] args) {
         SingleInstance instance = SingleInstance.getInstance();
         SingleInstance2 instance2 = SingleInstance2.getInstance();
-        SingleInstance3.getInstance()
+        SingleInstance3.getInstance();
     }
 }
 
