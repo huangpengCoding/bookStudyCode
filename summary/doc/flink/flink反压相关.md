@@ -15,3 +15,9 @@ Flink 没有使用任何复杂的机制来解决反压问题，Flink 在数据�
 [如何定位]
 1.通过 Flink Web UI 自带的反压监控面板；
 2.通过 Flink Task Metrics。
+
+
+[内部如何处理]
+Flink 内部是基于 producer-consumer 模型来进行消息传递的，Flink的反压设计也是基于这个模型。
+Flink 使用了高效有界的分布式阻塞队列，就像 Java 通用的阻塞队列（BlockingQueue）一样。
+下游消费者消费变慢，上游就会受到阻塞。

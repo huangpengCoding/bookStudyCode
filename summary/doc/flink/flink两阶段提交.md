@@ -18,3 +18,5 @@ TwoPhaseCommitSinkFunction
 两阶段的完整流程，提交过程中如果失败有以下两种情况
 Pre-commit失败，将恢复到最近一次CheckPoint位置
 一旦pre-commit完成，必须要确保commit也要成功
+
+
