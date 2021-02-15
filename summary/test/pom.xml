@@ -3,17 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>java.book.study</artifactId>
+        <artifactId>interview_question</artifactId>
         <groupId>com.hp</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>interview_question</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>test</module>
-    </modules>
+    <artifactId>test</artifactId>
 
 
 </project>
